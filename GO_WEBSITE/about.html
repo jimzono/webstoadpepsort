@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="stylehome.css">
+  <style>
+    body { padding: 0; margin: 0; background: #f5f5f0; }
+
+    /* ── Story Section ── */
+    .story-section {
+      display: flex;
+      align-items: flex-start;
+      gap: 40px;
+      padding: 60px 80px;
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+
+    .story-text {
+      flex: 1;
+      padding-top: 40px;
+    }
+
+    .story-text h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.6rem;
+      color: var(--brown);
+      border-left: 4px solid var(--gold);
+      padding-left: 14px;
+      margin-bottom: 20px;
+    }
+
+    .story-text p {
+      font-size: 0.95rem;
+      line-height: 1.85;
+      color: #4a3520;
+      font-weight: 300;
+      max-width: 500px;
+      margin-bottom: 14px;
+    }
+
+    /* ── Founder Card ── */
+    .founder-card {
+      width: 260px;
+      flex-shrink: 0;
+      background: #fff;
+      border: 1px solid #e0d8cc;
+      box-shadow: 0 4px 20px rgba(60,30,10,0.08);
+      text-align: center;
+      overflow: hidden;
+    }
+
+    .founder-card img {
+      width: 100%;
+      height: 280px;
+      object-fit: cover;
+      object-position: top;
+      display: block;
+    }
+
+    .founder-card .founder-info {
+      padding: 18px 16px 22px;
+    }
+
+    .founder-card .founder-name {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.1rem;
+      color: var(--brown);
+      margin-bottom: 6px;
+    }
+
+    .founder-card .founder-title {
+      font-size: 0.8rem;
+      color: #7a6040;
+      letter-spacing: 0.5px;
+      margin-bottom: 6px;
+    }
+
+    .founder-card .linkedin-badge {
+      font-size: 0.75rem;
+      color: #0a66c2;
+      letter-spacing: 0.5px;
+    }
+
+    /* ── Divider ── */
+    .section-divider {
+      width: calc(100% - 160px);
+      margin: 0 80px;
+      height: 1px;
+      background: #d8cbb8;
+    }
+
+    /* ── Bottom Section: Map + Form ── */
+    .bottom-section {
+      display: flex;
+      gap: 60px;
+      padding: 50px 80px 70px;
+      max-width: 1100px;
+      margin: 0 auto;
+      align-items: flex-start;
+    }
+
+    .map-col, .form-col {
+      flex: 1;
+    }
+
+    .col-title {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.2rem;
+      color: var(--brown);
+      margin-bottom: 18px;
+    }
+
+    .map-wrapper {
+      border: 1px solid #d0c4a8;
+      overflow: hidden;
+    }
+
+    .map-wrapper iframe {
+      display: block;
+      width: 100%;
+      height: 280px;
+      border: none;
+    }
+
+    .address {
+      margin-top: 10px;
+      font-size: 0.82rem;
+      color: #7a6040;
+    }
+
+    /* ── Inquiry Form ── */
+    .form-col input,
+    .form-col textarea {
+      display: block;
+      width: 100%;
+      padding: 12px 14px;
+      margin-bottom: 12px;
+      border: 1px solid #d0c4a8;
+      background: #fff;
+      font-family: 'Lato', sans-serif;
+      font-size: 0.88rem;
+      color: var(--brown);
+      outline: none;
+      transition: border-color 0.2s;
+    }
+
+    .form-col input:focus,
+    .form-col textarea:focus {
+      border-color: var(--gold);
+    }
+
+    .form-col textarea {
+      height: 110px;
+      resize: vertical;
+    }
+
+    .btn-submit {
+      display: block;
+      width: 100%;
+      padding: 13px;
+      background: var(--brown);
+      color: var(--gold-light);
+      font-family: 'Lato', sans-serif;
+      font-size: 0.8rem;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      font-weight: 700;
+      border: none;
+      cursor: pointer;
+      transition: background 0.2s, color 0.2s;
+    }
+
+    .btn-submit:hover {
+      background: var(--gold);
+      color: var(--dark);
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Story + Founder Card -->
+  <div class="story-section">
+    <div class="story-text">
+      <h2>Our Story</h2>
+      <p>
+        <strong>The Good Time Bar</strong> was born out of a passion for great drinks and bold comfort food.
+        We believe every visit should feel like a celebration — from our crispy fried chicken to our
+        handcrafted cocktails, every item is made with care and served with warmth.
+      </p>
+      <p>
+        Under the guidance of our founder, we've committed to sourcing only the freshest ingredients
+        and crafting drinks that keep you coming back. Come as you are, stay as long as you like.
+        <em>Good times guaranteed.</em>
+      </p>
+    </div>
+
+    <div class="founder-card">
+      <!-- Replace src below with your actual photo -->
+      <img src="images/founder.jpg" alt="Founder Photo">
+      <div class="founder-info">
+        <div class="founder-name">Romeo Jethro T. Go</div>
+        <div class="founder-title">Founder &amp; Chief Executive</div>
+        <div class="linkedin-badge">LinkedIn Verified</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="section-divider"></div>
+
+  <!-- Map + Inquiry Form -->
+  <div class="bottom-section">
+    <div class="map-col">
+      <div class="col-title">Find Us</div>
+      <div class="map-wrapper">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d125285.42824671867!2d123.84056455!3d10.3156992!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33a999258b8c2999%3A0x9df14d05a0e7e4b8!2sCebu%20City%2C%20Cebu!5e0!3m2!1sen!2sph!4v1710000000000!5m2!1sen!2sph"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+      </div>
+      <p class="address">📍 Cebu City, Central Visayas, Philippines</p>
+    </div>
+
+    <div class="form-col">
+      <div class="col-title">Inquiries &amp; Catering</div>
+      <input type="text" placeholder="Full Name">
+      <input type="email" placeholder="Email Address">
+      <textarea placeholder="How can we help you?"></textarea>
+      <button class="btn-submit">Send Inquiry</button>
+    </div>
+  </div>
+
+</body>
+</html>

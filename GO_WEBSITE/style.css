@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Lato:wght@300;400;700&display=swap');
+
+:root {
+  --gold: #c9a84c;
+  --gold-light: #e8c97a;
+  --dark: #1a1208;
+  --brown: #3b2a14;
+  --cream: #f5ead8;
+  --text-light: #f0e6d0;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  background-color: var(--dark);
+  font-family: 'Lato', sans-serif;
+  min-height: 100vh;
+}
+
+.header {
+  width: 80%;
+  margin: 0 auto;
+  height: 180px;
+  background: linear-gradient(135deg, #2a1a08 0%, #3b2a14 50%, #2a1a08 100%);
+  border-bottom: 3px solid var(--gold);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.header::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: url('images/image.jpg') center/cover no-repeat;
+  opacity: 0.25;
+}
+
+.header h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 3rem;
+  color: var(--gold-light);
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  position: relative;
+  z-index: 1;
+  text-shadow: 0 2px 12px rgba(0,0,0,0.7);
+}
+
+.header p {
+  font-family: 'Lato', sans-serif;
+  font-size: 1rem;
+  color: var(--cream);
+  letter-spacing: 2px;
+  position: relative;
+  z-index: 1;
+  margin-top: 8px;
+  font-weight: 300;
+}
+
+#nav {
+  width: 80%;
+  margin: 0 auto;
+  background: var(--brown);
+  border-bottom: 2px solid var(--gold);
+  display: flex;
+  gap: 0;
+}
+
+#nav a {
+  font-family: 'Lato', sans-serif;
+  font-size: 0.85rem;
+  color: var(--cream);
+  text-decoration: none;
+  padding: 14px 32px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  font-weight: 700;
+  transition: all 0.3s ease;
+  border-right: 1px solid rgba(201,168,76,0.2);
+}
+
+#nav a:hover {
+  background: var(--gold);
+  color: var(--dark);
+}
+
+.main {
+  width: 80%;
+  min-height: 500px;
+  margin: 0 auto;
+  background: var(--cream);
+  border-left: 1px solid var(--gold);
+  border-right: 1px solid var(--gold);
+}
+
+.main iframe {
+  border: none;
+  width: 100%;
+  height: 100%;
+  min-height: 500px;
+  display: block;
+}
+
+.footer {
+  width: 80%;
+  margin: 0 auto;
+  padding: 22px;
+  background: var(--brown);
+  border-top: 2px solid var(--gold);
+  text-align: center;
+  font-family: 'Lato', sans-serif;
+  font-size: 0.8rem;
+  color: rgba(240,230,208,0.6);
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}

@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>User Information Form</title>
+
+<style>
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background: linear-gradient(135deg,#4facfe,#00f2fe);
+    margin:0;
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+/* FORM CARD */
+.form-card{
+    background:white;
+    width:420px;
+    padding:35px;
+    border-radius:15px;
+    box-shadow:0 10px 25px rgba(0,0,0,0.2);
+}
+
+h1{
+    text-align:center;
+    margin-bottom:25px;
+    color:#333;
+}
+
+/* INPUT GROUP */
+.input-group{
+    margin-bottom:15px;
+}
+
+label{
+    font-weight:bold;
+    display:block;
+    margin-bottom:5px;
+    color:#444;
+}
+
+input[type=text],
+input[type=number],
+select{
+    width:100%;
+    padding:10px;
+    border-radius:6px;
+    border:1px solid #ccc;
+    font-size:14px;
+}
+
+/* RADIO + CHECKBOX */
+.options{
+    display:flex;
+    flex-wrap:wrap;
+    gap:10px;
+}
+
+/* BUTTONS */
+.buttons{
+    text-align:center;
+    margin-top:20px;
+}
+
+button{
+    padding:10px 25px;
+    border:none;
+    border-radius:25px;
+    font-size:15px;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+.submit-btn{
+    background:#4facfe;
+    color:white;
+}
+
+.submit-btn:hover{
+    background:#2e8cff;
+}
+
+.reset-btn{
+    background:#ddd;
+}
+
+.reset-btn:hover{
+    background:#bbb;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="form-card">
+
+<h1>User Information</h1>
+
+<form action="/action_page.php">
+
+<div class="input-group">
+<label>First Name</label>
+<input type="text" name="firstname">
+</div>
+
+<div class="input-group">
+<label>Last Name</label>
+<input type="text" name="lastname">
+</div>
+
+<div class="input-group">
+<label>Age</label>
+<input type="number" name="age">
+</div>
+
+<div class="input-group">
+<label>Gender</label>
+<div class="options">
+<label><input type="radio" name="gender"> Male</label>
+<label><input type="radio" name="gender"> Female</label>
+<label><input type="radio" name="gender"> Other</label>
+</div>
+</div>
+
+<div class="input-group">
+<label>Hobbies</label>
+<div class="options">
+<label><input type="checkbox"> Reading</label>
+<label><input type="checkbox"> Traveling</label>
+<label><input type="checkbox"> Gaming</label>
+<label><input type="checkbox"> Cooking</label>
+<label><input type="checkbox"> Sports</label>
+</div>
+</div>
+
+<div class="input-group">
+<label>Year Level</label>
+<select>
+<option>1st Year</option>
+<option>2nd Year</option>
+<option>3rd Year</option>
+<option>4th Year</option>
+</select>
+</div>
+
+<div class="buttons">
+<button class="submit-btn" type="submit">Submit</button>
+<button class="reset-btn" type="reset">Clear</button>
+</div>
+
+</form>
+
+</div>
+
+</body>
+</html>

@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="Romeo Jethro T. Go — CS Student Portfolio"/>
+  <title>Romeo Jethro T. Go</title>
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+<!-- ══════════ HEADER ══════════ -->
+<header>
+  <div class="container nav-inner">
+    <a href="#hero" class="nav-logo">JJ Go</a>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#hobbies">Hobbies</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#portfolio">Portfolio</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <button class="nav-toggle" id="nav-toggle" aria-label="Toggle menu">
+      <svg width="22" height="22" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+      </svg>
+    </button>
+  </div>
+  <nav class="mobile-nav" id="mobile-nav">
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#hobbies">Hobbies</a>
+    <a href="#education">Education</a>
+    <a href="#portfolio">Portfolio</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<!-- ══════════ HERO ══════════ -->
+<section id="hero">
+  <div class="container">
+    <div class="hero-inner">
+      <div class="hero-avatar fade-up">JJ</div>
+      <div>
+        <p class="hero-eyebrow fade-up d1">Computer Science Student · Cebu City</p>
+        <h1 class="hero-title fade-up d2">Hi, I'm<br/>Romeo Jethro T. Go</h1>
+        <p class="hero-sub fade-up d3">20 years old · Valorant Ascendant 2 · Cebu City, Philippines</p>
+        <div class="hero-btns fade-up d4">
+          <a href="#portfolio" class="btn btn-white">View Portfolio</a>
+          <a href="#contact"   class="btn btn-outline">Get in Touch</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════ ABOUT ══════════ -->
+<section id="about">
+  <div class="container">
+    <h2 class="section-heading">About Me</h2>
+    <div class="about-inner">
+      <div class="about-text">
+        <p>I am <strong>Romeo Jethro T. Go</strong>, a 20-year-old Computer Science student based in <strong>V. Rama, Cebu City</strong>. I enjoy spending my free time practicing programming and sharpening my skills.</p>
+        <p>Outside of academics, I'm an avid gamer — currently holding <strong>Ascendant 2</strong> in Valorant (V25ACT6). The strategic thinking in gaming complements my approach to programming challenges.</p>
+        <p>My favorite number is <strong>44</strong> and my favorite color is <strong style="color:var(--accent)">blue</strong> — which drives the theme of this portfolio.</p>
+      </div>
+      <div class="about-avatar">JJ</div>
+    </div>
+    <div class="stat-grid">
+      <div class="stat-card"><div class="stat-num">20</div><div class="stat-label">Years Old</div></div>
+      <div class="stat-card"><div class="stat-num">A2</div><div class="stat-label">Valorant Rank</div></div>
+      <div class="stat-card"><div class="stat-num">44</div><div class="stat-label">Fav Number</div></div>
+      <div class="stat-card"><div class="stat-num">CS</div><div class="stat-label">Major</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════ SKILLS ══════════ -->
+<section id="skills">
+  <div class="container">
+    <h2 class="section-heading">My Skills</h2>
+    <div class="skills-grid">
+
+      <div class="skill-card">
+        <h3 class="skill-card-title">
+          <svg width="18" height="18" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"/></svg>
+          Web Development
+        </h3>
+        <ul class="skill-list">
+          <li>
+            <div class="skill-item-label"><span>HTML</span><span>75%</span></div>
+            <div class="skill-track"><div class="skill-fill" data-width="75%"></div></div>
+          </li>
+          <li>
+            <div class="skill-item-label"><span>CSS</span><span>65%</span></div>
+            <div class="skill-track"><div class="skill-fill" data-width="65%"></div></div>
+          </li>
+          <li>
+            <div class="skill-item-label"><span>JavaScript</span><span>50%</span></div>
+            <div class="skill-track"><div class="skill-fill" data-width="50%"></div></div>
+          </li>
+        </ul>
+      </div>
+
+      <div class="skill-card">
+        <h3 class="skill-card-title">
+          <svg width="18" height="18" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 3H5a2 2 0 00-2 2v4m6-6h10a2 2 0 012 2v4M9 3v18m0 0h10a2 2 0 002-2V9M9 21H5a2 2 0 01-2-2V9m0 0h18"/></svg>
+          Programming
+        </h3>
+        <ul class="skill-list">
+          <li>
+            <div class="skill-item-label"><span>C Language</span><span>70%</span></div>
+            <div class="skill-track"><div class="skill-fill" data-width="70%"></div></div>
+          </li>
+          <li>
+            <div class="skill-item-label"><span>Python</span><span>55%</span></div>
+            <div class="skill-track"><div class="skill-fill" data-width="55%"></div></div>
+          </li>
+          <li>
+            <div class="skill-item-label"><span>Java</span><span>45%</span></div>
+            <div class="skill-track"><div class="skill-fill" data-width="45%"></div></div>
+          </li>
+        </ul>
+      </div>
+
+      <div class="skill-card">
+        <h3 class="skill-card-title">
+          <svg width="18" height="18" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z"/><circle cx="12" cy="12" r="3"/></svg>
+          Tools & Concepts
+        </h3>
+        <ul class="skill-list">
+          <li>
+            <div class="skill-item-label"><span>Discrete Math / Logic</span><span>78%</span></div>
+            <div class="skill-track"><div class="skill-fill" data-width="78%"></div></div>
+          </li>
+          <li>
+            <div class="skill-item-label"><span>Git / Version Control</span><span>60%</span></div>
+            <div class="skill-track"><div class="skill-fill" data-width="60%"></div></div>
+          </li>
+          <li>
+            <div class="skill-item-label"><span>Data Structures</span><span>55%</span></div>
+            <div class="skill-track"><div class="skill-fill" data-width="55%"></div></div>
+          </li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ══════════ HOBBIES ══════════ -->
+<section id="hobbies">
+  <div class="container">
+    <h2 class="section-heading">Interests & Bucket List</h2>
+    <div class="lists-grid">
+
+      <div class="list-card">
+        <h3 class="list-card-title">
+          <svg width="16" height="16" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2"/></svg>
+          Favorite Food
+        </h3>
+        <ol>
+          <li>Pork Sweet and Sour</li>
+          <li>Chicken
+            <ul class="sub-list">
+              <li>Lakatan</li>
+              <li>Senorita</li>
+            </ul>
+          </li>
+          <li>Pineapple</li>
+          <li>Grapes</li>
+          <li>Macopa</li>
+        </ol>
+      </div>
+
+      <div class="list-card">
+        <h3 class="list-card-title">
+          <svg width="16" height="16" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+          Bucket List
+        </h3>
+        <ul style="list-style:none;padding:0;">
+          <li>Radiant Rank in Valorant</li>
+          <li>Nike Jordans</li>
+          <li>Toyota Land Cruiser</li>
+          <li>Porsche 911</li>
+          <li>Rolex</li>
+          <li>Zowie Monitor</li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ══════════ EDUCATION ══════════ -->
+<section id="education">
+  <div class="container">
+    <h2 class="section-heading">Education</h2>
+    <div class="edu-list">
+      <div class="edu-card">
+        <div class="edu-dot"></div>
+        <div>
+          <div class="edu-degree">Bachelor of Science in Information Technology/div>
+          <div class="edu-school">Cebu Institute of Technology University · 2025 – Present</div>
+          <span class="edu-badge">Currently Enrolled · 1st Year</span>
+        </div>
+      </div>
+      <div class="edu-card">
+        <div class="edu-dot"></div>
+        <div>
+          <div class="edu-degree">Senior High School</div>
+          <div class="edu-school">Cebu City · Completed 2024</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════ PORTFOLIO ══════════ -->
+<section id="portfolio">
+<div class="portfolio-grid">
+<div class="portfolio-card" data-src="1-4/activity1.html" data-title="Activity 1 — Personal Profile Page">
+  <div class="portfolio-thumb" style="background:linear-gradient(135deg,#1e3a8a,#2563eb);">
+    <div class="act-num">01</div>
+    <div class="portfolio-thumb-inner">
+      <p class="act-eyebrow">Activity 1</p>
+      <h3>Personal Profile</h3>
+      <p class="act-tech">HTML · Inline Styles</p>
+    </div>
+  </div>
+  <div class="portfolio-body">
+    <div class="portfolio-tags"></div>
+    <h4>Personal Profile Page</h4>
+    <p>Basic "About Me" page showcasing styled text, font properties, and inline CSS.</p>
+    <div class="open-hint"><svg width="12" height="12" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"/></svg> Click to open</div>
+  </div>
+</div>
+
+<div class="portfolio-card" data-src="1-4/activity2.html" data-title="Activity 2 — Ordered & Unordered Lists">
+  <div class="portfolio-thumb" style="background:linear-gradient(135deg,#065f46,#059669);">
+    <div class="act-num">02</div>
+    <div class="portfolio-thumb-inner">
+      <p class="act-eyebrow">Activity 2</p>
+      <h3>Lists & Backgrounds</h3>
+      <p class="act-tech">HTML · Background Images</p>
+    </div>
+  </div>
+  <div class="portfolio-body">
+    <div class="portfolio-tags"></div>
+    <h4>Ordered & Unordered Lists</h4>
+    <p>Favorite foods and bucket list items with background image styling.</p>
+    <div class="open-hint"><svg width="12" height="12" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"/></svg> Click to open</div>
+  </div>
+</div>
+
+<div class="portfolio-card" data-src="1-4/activity3.html" data-title="Activity 3 — Supercar Image Gallery Table">
+  <div class="portfolio-thumb" style="background:linear-gradient(135deg,#4c1d95,#7c3aed);">
+    <div class="act-num">03</div>
+    <div class="portfolio-thumb-inner">
+      <p class="act-eyebrow">Activity 3</p>
+      <h3>Image Table</h3>
+      <p class="act-tech">HTML · Tables</p>
+    </div>
+  </div>
+  <div class="portfolio-body">
+    <div class="portfolio-tags"></div>
+    <h4>Supercar Image Gallery</h4>
+    <p>3×2 HTML table featuring dream supercars and responsive formatting.</p>
+    <div class="open-hint"><svg width="12" height="12" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"/></svg> Click to open</div>
+  </div>
+</div>
+
+<div class="portfolio-card" data-src="1-4/activity4v2.html" data-title="Activity 4 — User Information Form">
+  <div class="portfolio-thumb" style="background:linear-gradient(135deg,#0369a1,#4facfe);">
+    <div class="act-num">04</div>
+    <div class="portfolio-thumb-inner">
+      <p class="act-eyebrow">Activity 4</p>
+      <h3>User Info Form</h3>
+      <p class="act-tech">HTML · CSS · Forms</p>
+    </div>
+  </div>
+  <div class="portfolio-body">
+    <div class="portfolio-tags"></div>
+    <h4>User Information Form</h4>
+    <p>Card-style form with radio buttons, checkboxes, and styled inputs.</p>
+    <div class="open-hint"><svg width="12" height="12" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"/></svg> Click to open</div>
+  </div>
+</div>
+
+  <div class="portfolio-card" data-src="5/activity5.html" data-title="Activity 5">
+    <div class="portfolio-thumb" style="background:linear-gradient(135deg,#b91c1c,#ef4444);">
+      <div class="act-num">05</div>
+      <div class="portfolio-thumb-inner">
+        <p class="act-eyebrow">Activity 5</p>
+        <h3>Activity Title</h3>
+        <p class="act-tech">Technology · Tools</p>
+      </div>
+    </div>
+    <div class="portfolio-body">
+      <div class="portfolio-tags"></div>
+      <h4>Activity 5 Heading</h4>
+      <p>Placeholder description for Activity 5. This will be updated with your project details.</p>
+      <div class="open-hint"><svg width="12" height="12" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"/></svg> Click to open</div>
+    </div>
+  </div>
+
+  <div class="portfolio-card" data-src="6/index.html" data-title="Activity 6">
+    <div class="portfolio-thumb" style="background:linear-gradient(135deg,#c2410c,#f97316);">
+      <div class="act-num">06</div>
+      <div class="portfolio-thumb-inner">
+        <p class="act-eyebrow">Activity 6</p>
+        <h3>Activity Title</h3>
+        <p class="act-tech">Technology · Tools</p>
+      </div>
+    </div>
+    <div class="portfolio-body">
+      <div class="portfolio-tags"></div>
+      <h4>Activity 6 Heading</h4>
+      <p>Placeholder description for Activity 6.</p>
+      <div class="open-hint"><svg width="12" height="12" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"/></svg> Click to open</div>
+    </div>
+  </div>
+
+  <div class="portfolio-card" data-src="7-10/activity_7.html" data-title="Activity 7">
+    <div class="portfolio-thumb" style="background:linear-gradient(135deg,#a21caf,#e879f9);">
+      <div class="act-num">07</div>
+      <div class="portfolio-thumb-inner">
+        <p class="act-eyebrow">Activity 7</p>
+        <h3>Activity Title</h3>
+        <p class="act-tech">Technology · Tools</p>
+      </div>
+    </div>
+    <div class="portfolio-body">
+      <div class="portfolio-tags"></div>
+      <h4>Activity 7 Heading</h4>
+      <p>Placeholder description for Activity 7.</p>
+      <div class="open-hint"><svg width="12" height="12" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"/></svg> Click to open</div>
+    </div>
+  </div>
+
+  <div class="portfolio-card" data-src="7-10/activity_8.html" data-title="Activity 8">
+    <div class="portfolio-thumb" style="background:linear-gradient(135deg,#374151,#6b7280);">
+      <div class="act-num">08</div>
+      <div class="portfolio-thumb-inner">
+        <p class="act-eyebrow">Activity 8</p>
+        <h3>Activity Title</h3>
+        <p class="act-tech">Technology · Tools</p>
+      </div>
+    </div>
+    <div class="portfolio-body">
+      <div class="portfolio-tags"></div>
+      <h4>Activity 8 Heading</h4>
+      <p>Placeholder description for Activity 8.</p>
+      <div class="open-hint"><svg width="12" height="12" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"/></svg> Click to open</div>
+    </div>
+  </div>
+
+  <div class="portfolio-card" data-src="7-10/activity_9.html" data-title="Activity 9">
+    <div class="portfolio-thumb" style="background:linear-gradient(135deg,#be123c,#fb7185);">
+      <div class="act-num">09</div>
+      <div class="portfolio-thumb-inner">
+        <p class="act-eyebrow">Activity 9</p>
+        <h3>Activity Title</h3>
+        <p class="act-tech">Technology · Tools</p>
+      </div>
+    </div>
+    <div class="portfolio-body">
+      <div class="portfolio-tags"></div>
+      <h4>Activity 9 Heading</h4>
+      <p>Placeholder description for Activity 9.</p>
+      <div class="open-hint"><svg width="12" height="12" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"/></svg> Click to open</div>
+    </div>
+  </div>
+
+  <div class="portfolio-card" data-src="7-10/activity_10.html" data-title="Activity 10">
+    <div class="portfolio-thumb" style="background:linear-gradient(135deg,#15803d,#4ade80);">
+      <div class="act-num">10</div>
+      <div class="portfolio-thumb-inner">
+        <p class="act-eyebrow">Activity 10</p>
+        <h3>Activity Title</h3>
+        <p class="act-tech">Technology · Tools</p>
+      </div>
+    </div>
+    <div class="portfolio-body">
+      <div class="portfolio-tags"></div>
+      <h4>Activity 10 Heading</h4>
+      <p>Placeholder description for Activity 10.</p>
+      <div class="open-hint"><svg width="12" height="12" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"/></svg> Click to open</div>
+    </div>
+  </div>
+
+  <div class="portfolio-card" data-src="11/activity11.html" data-title="Activity 11">
+    <div class="portfolio-thumb" style="background:linear-gradient(135deg,#4338ca,#818cf8);">
+      <div class="act-num">11</div>
+      <div class="portfolio-thumb-inner">
+        <p class="act-eyebrow">Activity 11</p>
+        <h3>Activity Title</h3>
+        <p class="act-tech">Technology · Tools</p>
+      </div>
+    </div>
+    <div class="portfolio-body">
+      <div class="portfolio-tags"></div>
+      <h4>Activity 11 Heading</h4>
+      <p>Placeholder description for Activity 11.</p>
+      <div class="open-hint"><svg width="12" height="12" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"/></svg> Click to open</div>
+    </div>
+  </div>
+
+  <div class="portfolio-card" data-src="GO_WEBSITE/index.html" data-title="Website — Final Project">
+    <div class="portfolio-thumb" style="background:linear-gradient(135deg,#0f172a,#334155);">
+      <div class="act-num">WEB</div>
+      <div class="portfolio-thumb-inner">
+        <p class="act-eyebrow">Capstone</p>
+        <h3>Final Website</h3>
+        <p class="act-tech">Full Stack · Responsive</p>
+      </div>
+    </div>
+    <div class="portfolio-body">
+      <div class="portfolio-tags"></div>
+      <h4>Website Placeholder</h4>
+      <p>Update the data-src to point to your final project build.</p>
+      <div class="open-hint"><svg width="12" height="12" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"/></svg> Click to open</div>
+    </div>
+  </div>
+</div>
+</section>
+
+<!-- ══════════ ACTIVITY MODAL ══════════ -->
+<div class="modal-overlay" id="modal-overlay">
+  <div class="modal-box">
+    <div class="modal-header">
+      <span class="modal-title" id="modal-title"></span>
+      <button class="modal-close" id="modal-close" aria-label="Close">✕</button>
+    </div>
+    <iframe id="modal-frame" title="Activity Preview" sandbox="allow-scripts allow-same-origin allow-forms"></iframe>
+  </div>
+</div>
+
+<!-- ══════════ CONTACT ══════════ -->
+<section id="contact">
+  <div class="container">
+    <h2 class="section-heading">Get in Touch</h2>
+    <div class="contact-card">
+      <div class="contact-form-side">
+        <p>Have a question or want to connect? Send me a message!</p>
+        <form onsubmit="return false;">
+          <div class="form-group">
+            <label>Name</label>
+            <input type="text" placeholder="Your name"/>
+          </div>
+          <div class="form-group">
+            <label>Email</label>
+            <input type="email" placeholder="your@email.com"/>
+          </div>
+          <div class="form-group">
+            <label>Message</label>
+            <textarea rows="4" placeholder="Your message..."></textarea>
+          </div>
+          <button type="submit" class="btn-submit">Send Message</button>
+        </form>
+      </div>
+      <div class="contact-info-side">
+        <h3>Contact Info</h3>
+        <div class="info-item">
+          <svg width="16" height="16" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+          <span>V. Rama, Cebu City, Philippines</span>
+        </div>
+        <div class="info-item">
+          <svg width="16" height="16" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"/></svg>
+          <span>BS Computer Science Student</span>
+        </div>
+        <div class="map-wrap">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3925.5!2d123.902!3d10.3157!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33a99f4d4ff41f47%3A0x6ab62fe3f1ab2d25!2sV.%20Rama%20Ave%2C%20Cebu%20City!5e0!3m2!1sen!2sph!4v1" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════ FOOTER ══════════ -->
+<footer>
+  <div class="container">
+    <p class="footer-name display">Romeo Jethro T. Go</p>
+    <p class="footer-sub">CS Student · Cebu City, Philippines</p>
+    <div class="footer-links">
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#hobbies">Hobbies</a>
+      <a href="#education">Education</a>
+      <a href="#portfolio">Portfolio</a>
+      <a href="#contact">Contact</a>
+    </div>
+    <p class="footer-copy">© <span id="yr"></span> Romeo Jethro T. Go. All rights reserved.</p>
+  </div>
+</footer>
+
+<script src="main.js"></script>
+</body>
+</html>
